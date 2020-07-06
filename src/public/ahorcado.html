@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Aprendiendo en casa</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>
+    .btn-tecla{
+      width: 75px;
+      margin: 0.2rem;
+    }
+    #resp-text{
+      height: 350px;
+      border: none;
+      text-align: center;
+    }
+    .monito{
+      width: 50%;
+      margin: 0 auto;
+      font-size: 35px;
+      color: red;
+      text-align: center;
+    }
+    .monito.estomago {
+      display: inline-block;
+      width: auto;
+      /* margin: 0 auto; */
+  }
+    .head-p{
+      padding: 0;
+      text-align: center;
+    }
+    input{
+      font-size: 32px !important;
+    text-transform: uppercase;
+    text-align: center;
+    }
+    .gris{
+      background-color: gray;
+    }
+  </style>
+</head>
+<body >
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Aprendizaje desde casa</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#demo-modal" class="modal-trigger">Iniciar Sesión</a></li>
+        <li><a href="#modal-registrer" class="modal-trigger">Registrarse</a></li>
+
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#demo-modal" class="modal-trigger">Iniciar Sesión</a></li>
+        <li><a href="#modal-registrer" class="modal-trigger">Registrarse</a></li>
+
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  
+
+    
+  <div id="login"></div>
+  <div id="registro"></div>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Aprender desde casa es divertido <i class="material-icons" style="font-size: 65px;">home</i></h1>
+      <div class="row center">
+        <h5 class="header col s12 light"><i class="material-icons" style="font-size: 30px;">child_care</i> Aprender ahora es fácil, sencillo y divertido ¿qué esperas? Únete !!! </h5>
+      </div>
+   
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="content-slider">
+            <div class="slider">
+                <div class="contenido" >
+                    <h4 id="respuesta" data-resp="ISOSCELES"  >Es un tipo de triángulo que tiene dos lados de igual longitud</h4>
+                    <div>
+                      <span>Ingresa la palabra correcta</span>
+                    </div>
+                    <div class="col s12 m6" id="resp-text" >
+                       
+                    </div>
+                    <div class="col s12 m6" id="palabras">
+                        
+                    </div>
+                    <div class="col s12 m12 botones-teclas">
+                    
+
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+        </div>       
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <h5>Made by   <i class="material-icons " style="font-size: 30px;">star</i></h5>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/bundle.js"></script>
+  <script>
+      $(document).ready(function(){
+
+      var preguntas = ['¿Cuántos minutos tiene una hora?','¿Cuál es el planeta más cercano al sol?','¿Cuál es la montaña más alta de la actualidad?','¿País con mayor poblacion en el mundo?','¿Cuáles son las palabras que tienen mismo significado pero se escriben diferente?','¿Cuál es el planeta en el que vivimos?','¿Es un tipo de triángulo que tiene dos lados de igual longitud?','La suma de sus angulos da 180 grados','¿Continente que descubrió Cristobal Colón?','¿Cómo se le llama al movimiento cultural que se produjo en Europa Occidental durante los siglos XV y XVI?'];
+      var respuestas = ['60','MERCURIO','EVEREST','CHINA','SINONIMOS','TIERRA','ISOSCELES','TRIANGULO','AMERICA','RENACIMIENTO'];
+      var index = 0;
+      var txt = '';
+      var resp = '';
+      var size = 0;
+      var monito = [' <div class="monito head-p"> | </div>',' <div class="monito head-p"> | </div>',' <div class="monito"> O </div>', '<div class="monito estomago"> / </div>','<div class="monito estomago"> | </div> ','<div class="monito estomago"> \\ </div> ','<div> <div class="monito estomago">  / </div>',' <div class="monito estomago"> \\ </div></div>']
+      var intentos = monito.length;
+      var ahorcado = 0;
+      var resp_txt = '';
+      for(var i = 0; i < 26; i++){
+          txt += '<button class="waves-effect waves-light btn-small btn-tecla  pink darken-2" id="'+String.fromCharCode(i+65)+'" >'+String.fromCharCode(i+65)+'</button>';
+      }
+      for(var i = 0; i < 10; i++ ){
+          txt += '  <button class="waves-effect waves-light btn-small btn-tecla pink darken-4" id="'+String.fromCharCode(i+48)+'" >'+String.fromCharCode(i+48)+'</button>'; 
+      }
+      $('.botones-teclas').html(txt);
+     iniciar();
+
+      function iniciar(){
+        reset();
+        if(index < preguntas.length){
+          $('#respuesta').attr('data-resp',respuestas[index]);
+          $('#respuesta').html(preguntas[index]);
+          game();
+          index++;
+        }
+      }
+
+      function game(){
+        resp = $('#respuesta').attr('data-resp');
+        size = resp.length;
+       // alert(resp+' '+size);
+        var pal_txt = "";
+        for(var i = 0; i < size; i++){
+          pal_txt += '<div class="input-field col s2 "><input id="letra-'+i+'" type="text" style="color: green;" class="validate letras-ahorcado" disabled ></div>';
+          
+        }
+        $("#palabras").html(pal_txt);
+      //  $('#resp-text').html('<div class="col s12 m6" id="resp-text"> <div class="monito head-p"> | </div> <div class="monito head-p"> | </div> <div class="monito"> O </div> <div class="monito estomago"> / </div><div class="monito estomago"> | </div> <div class="monito estomago"> \\ </div> <div> <div class="monito estomago">  / </div><div class="monito estomago"> \\ </div></div>');
+      }
+
+      
+        $('.btn-tecla').click(function(){
+           var t = $(this).attr('id');
+           jugar(t);
+        });
+        function jugar(tecla){
+          var b = 0;
+           if(ahorcado < intentos){
+            for(var i = 0; i < size; i++ ){
+              if( resp[i] == tecla){ //le ationo
+                $('#letra-'+i).val(tecla);
+                $('#'+tecla).addClass('gris');
+
+                b = 1; //si hubo
+              }
+            }
+            if(b == 0){ //no hubo
+              resp_txt += monito[ahorcado];
+              ahorcado++; 
+            }
+           
+            $("#resp-text").html(resp_txt);
+            var cont = 0;
+             for(var i = 0; i < size; i++){
+              if($('#letra-'+i).val().length >0) cont++;
+            }
+            if(cont == size){
+              resp_txt += '<div class="monito head-p" style="color: green;"> Ganaste !! :) </div>';
+                $("#resp-text").html(resp_txt);
+                setTimeout(function(){ iniciar(); }, 3000);
+            }
+             if(ahorcado >= 8){
+                resp_txt += '<div class="monito head-p"> Perdiste !! :( </div>';
+                $("#resp-text").html(resp_txt);
+                for(var i=0; i < size; i++){
+                  if( $('#letra-'+i).val().length == 0){
+                    $('#letra-'+i).css({color:'red'});
+                    $('#letra-'+i).val(resp[i]);
+                  }
+                }
+                setTimeout(function(){ iniciar(); }, 3000);
+             }
+             console.log(ahorcado);
+           }
+            
+        }
+        function reset(){
+          ahorcado = 0;
+          resp_txt = '';
+          $("#resp-text").html(resp_txt);
+          $("input").val('');
+          $('input').css({color:'green'});
+        }
+      });
+  </script>
+  </body>
+</html>

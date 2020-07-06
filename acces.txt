@@ -1,0 +1,9 @@
+BD:
+
+aprendizaje
+  user{id,tipo,school,name,description,id_group(student)}
+  group{id,id_teacher,name,description}
+  activity{id,id_group,name,decription,type_activity,preguntas[],respuestas[]}
+  cat_activiti{ 
+  		id,type
+	} --> (ahorcado,relacionar,cucigramas,sopas)
